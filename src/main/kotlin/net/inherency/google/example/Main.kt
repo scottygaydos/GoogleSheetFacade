@@ -6,7 +6,7 @@ import net.inherency.google.pvt.capitalize
 import net.inherency.google.example.ComplexReport.Companion.INCOME
 import java.time.LocalDate
 
-fun main() {
+internal fun main() {
     val googleAuthJson = readEnvVariable("googleAuthJson")
     val googleSheetId = readEnvVariable("googleSheetId")
     val googleAppName = readEnvVariable("googleAppName")
@@ -58,10 +58,10 @@ fun main() {
     client.deleteTabs(listOf(tempTab))
 }
 
-fun readEnvVariable(varName: String) = System.getenv()[varName]
+internal fun readEnvVariable(varName: String) = System.getenv()[varName]
     ?: throw RuntimeException("Could not read $varName from environment")
 
-fun getRandomStringForName() : String {
+internal fun getRandomStringForName() : String {
     val charset = "abcdefghiklmnopqrstuvwxyz"
     return (1..10)
         .map { charset.random() }

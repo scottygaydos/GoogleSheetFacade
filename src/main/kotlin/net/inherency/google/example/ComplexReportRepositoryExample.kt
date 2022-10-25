@@ -8,7 +8,7 @@ import java.time.Month
 import java.time.format.TextStyle
 import java.util.Locale
 
-class ComplexReportRepositoryExample(
+internal class ComplexReportRepositoryExample(
     private val googleSheetClient: GoogleSheetClient
 ): GoogleSheetReportRepository<ComplexReport> {
 

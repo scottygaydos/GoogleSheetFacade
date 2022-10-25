@@ -3,7 +3,7 @@ package net.inherency.google.example
 import net.inherency.google.base.GoogleSheetClient
 import net.inherency.google.base.GoogleSheetReadRepository
 
-class ReadSimpleReportRepositoryExample(
+internal class ReadSimpleReportRepositoryExample(
     private val googleSheetClient: GoogleSheetClient
 ): GoogleSheetReadRepository<SimpleReport> {
 

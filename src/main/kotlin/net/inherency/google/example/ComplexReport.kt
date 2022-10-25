@@ -3,7 +3,7 @@ package net.inherency.google.example
 import net.inherency.google.base.GoogleSheetNameMatchable
 import java.time.LocalDate
 
-data class ComplexReport(
+internal data class ComplexReport(
     val transactionDate: LocalDate,
     val transactionDescription: String,
     val amount: Int,
